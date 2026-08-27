@@ -1,51 +1,594 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Khatapata Advisory Services</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="brp.jpg" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Khatapata Advisory Services</h1>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">"your finance expert"</p>
-                <nav>
-                    <a href="https://www.youtube.com/channel/UCGrwXFkU46YsdhzxbnBcpOA"><i class="fab fa-youtube"></i></a>
-                    <a href="https://facebook.com/khatapataadvisoryservices/"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/khatapata_advisory_services/"><i class="fab fa-instagram"></i></a>
-                </nav>
-              
-               
-            </div>
-        </header>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; 2021 Khatapata Advisory Services Private Limited</small></div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prabin Koirala — Accounting, Tax & Legal, FDI Advisory | Nepal</title>
+<meta name="description" content="Prabin Koirala — Freelance consultant & CEO of Khatapata. Accounting & bookkeeping outsourcing, tax and legal consulting, FDI investment advisory, annual compliance, cost control and operations outsourcing in Nepal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#152C54;
+    --ink-soft:#1F3D75;
+    --paper:#F3EFE6;
+    --paper-deep:#EAE3D3;
+    --marigold:#3E64A8;
+    --marigold-deep:#2C4C87;
+    --maroon:#1F3D75;
+    --slate:#0D0D0D;
+    --text:#0D0D0D;
+    --white:#FFFDF9;
+    --line: rgba(0,0,0,0.14);
+    --radius: 4px;
+    --max: 1120px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    line-height:1.12;
+    margin:0;
+    color:var(--text);
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+  section{position:relative;}
+
+  .eyebrow{
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    font-size:0.72rem;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--maroon);
+    display:inline-block;
+    margin-bottom:14px;
+  }
+
+  /* ---------- focus ---------- */
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
+    outline:2px solid var(--marigold-deep);
+    outline-offset:3px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
+
+  /* ---------- nav ---------- */
+  header.site-nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(243,239,230,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-row{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 28px; max-width:var(--max); margin:0 auto;
+  }
+  .brandmark{
+    font-family:'Fraunces',serif; font-weight:600; font-size:1.15rem; letter-spacing:0.01em;
+  }
+  .brandmark span{color:var(--maroon);}
+  nav.links{display:flex; gap:28px; font-size:0.88rem; font-weight:500;}
+  nav.links a{opacity:0.78; transition:opacity .15s;}
+  nav.links a:hover{opacity:1;}
+  .nav-cta{
+    padding:9px 18px; border:1px solid var(--ink); border-radius:var(--radius);
+    font-size:0.82rem; font-weight:600; white-space:nowrap;
+  }
+  .nav-toggle{display:none;}
+
+  @media (max-width:820px){
+    nav.links{display:none;}
+    .nav-toggle{display:block; background:none; border:1px solid var(--ink); border-radius:var(--radius); padding:8px 12px; font-size:0.8rem; font-weight:600;}
+  }
+
+  /* ---------- ridgeline motif ---------- */
+  .ridge{
+    display:block; width:100%; height:auto;
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:var(--ink);
+    color:var(--white);
+    padding:96px 0 0;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1.15fr 0.85fr; gap:56px; align-items:center;
+    padding-bottom:64px;
+  }
+  .hero h1{
+    color:var(--white);
+    font-size:clamp(2.5rem, 5vw, 3.6rem);
+    margin-bottom:22px;
+  }
+  .hero h1 em{
+    font-style:italic; color:var(--marigold);
+  }
+  .hero p.lead{
+    font-size:1.08rem; color:rgba(255,253,249,0.78); max-width:46ch; margin-bottom:34px;
+  }
+  .hero-cta-row{display:flex; gap:14px; flex-wrap:wrap;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:13px 24px; border-radius:var(--radius);
+    font-size:0.9rem; font-weight:600; cursor:pointer; border:1px solid transparent;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn-primary{background:var(--marigold); color:var(--white);}
+  .btn-primary:hover{background:var(--marigold-deep);}
+  .btn-ghost{border-color:rgba(255,253,249,0.35); color:var(--white);}
+  .btn-ghost:hover{border-color:var(--white);}
+  .btn-dark{background:var(--ink); color:var(--white);}
+  .btn-dark:hover{background:var(--ink-soft);}
+
+  .hero-portrait{
+    aspect-ratio:4/5; background:linear-gradient(155deg, var(--ink-soft), #101a2c);
+    border-radius:var(--radius);
+    border:1px solid rgba(255,253,249,0.14);
+    display:flex; align-items:center; justify-content:center;
+    color:rgba(255,253,249,0.45); font-size:0.85rem; text-align:center; padding:24px;
+    position:relative;
+  }
+  .hero-portrait::before{
+    content:""; position:absolute; inset:14px; border:1px solid rgba(226,166,59,0.35);
+  }
+
+  .hero-stats{
+    display:grid; grid-template-columns:repeat(3,1fr);
+    border-top:1px solid rgba(255,253,249,0.14);
+    padding:28px 0;
+  }
+  .hero-stats div{padding:0 24px; border-left:1px solid rgba(255,253,249,0.14);}
+  .hero-stats div:first-child{border-left:none; padding-left:0;}
+  .hero-stats .num{font-family:'Fraunces',serif; font-size:1.9rem; color:var(--marigold); display:block; margin-bottom:4px;}
+  .hero-stats .lbl{font-size:0.78rem; color:rgba(255,253,249,0.62); text-transform:uppercase; letter-spacing:0.08em;}
+
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr; padding-bottom:40px;}
+    .hero-portrait{max-width:280px; margin:0 auto;}
+    .hero-stats{grid-template-columns:1fr; gap:16px;}
+    .hero-stats div{border-left:none; border-top:1px solid rgba(255,253,249,0.14); padding:16px 0 0;}
+    .hero-stats div:first-child{border-top:none; padding-top:0;}
+  }
+
+  /* ---------- section shell ---------- */
+  .section{padding:88px 0;}
+  .section-head{max-width:640px; margin-bottom:52px;}
+  .section-head h2{font-size:clamp(1.9rem, 3vw, 2.5rem);}
+  .section-head p{color:var(--slate); margin-top:14px; font-size:1.02rem;}
+
+  .section-alt{background:var(--white); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+
+  /* ---------- about ---------- */
+  .about-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:64px; align-items:start;}
+  .about-copy p{color:var(--slate); margin:0 0 18px; font-size:1.02rem;}
+  .about-copy strong{color:var(--ink);}
+  .role-cards{display:flex; flex-direction:column; gap:18px; margin-top:28px;}
+  .role-card{
+    border:1px solid var(--line); border-radius:var(--radius); padding:20px 22px; background:var(--paper);
+  }
+  .role-card .role-title{font-family:'Fraunces',serif; font-weight:600; font-size:1.08rem; margin-bottom:6px;}
+  .role-card .role-org{color:var(--maroon); font-size:0.84rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px;}
+  .role-card p{color:var(--slate); font-size:0.95rem; margin:0;}
+
+  @media (max-width:880px){
+    .about-grid{grid-template-columns:1fr;}
+  }
+
+  /* ---------- services ---------- */
+  .services-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
+    background:var(--line); border:1px solid var(--line);
+  }
+  .service-card{
+    background:var(--white); padding:32px 28px; min-height:200px;
+    display:flex; flex-direction:column; gap:12px;
+  }
+  .service-card .icon{
+    width:38px; height:38px; border-radius:50%; background:var(--paper-deep);
+    display:flex; align-items:center; justify-content:center; color:var(--maroon); font-family:'Fraunces',serif; font-weight:600;
+  }
+  .service-card h3{font-size:1.08rem;}
+  .service-card p{color:var(--slate); font-size:0.92rem; margin:0;}
+
+  @media (max-width:880px){ .services-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .services-grid{grid-template-columns:1fr;} }
+
+  /* ---------- content hub ---------- */
+  .content-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  .content-card{
+    border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:var(--white);
+    display:flex; flex-direction:column;
+  }
+  .content-card .thumb{
+    aspect-ratio:9/12; background:linear-gradient(160deg, var(--ink), var(--ink-soft));
+    display:flex; align-items:center; justify-content:center; color:var(--marigold);
+    font-family:'Fraunces',serif; font-size:0.95rem; text-align:center; padding:18px; position:relative;
+  }
+  .content-card .thumb .play{
+    position:absolute; width:46px; height:46px; border-radius:50%;
+    background:rgba(255,253,249,0.14); border:1px solid rgba(255,253,249,0.4);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .content-card .body{padding:18px 20px; display:flex; flex-direction:column; gap:8px; flex:1;}
+  .content-card .platform{font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--maroon); font-weight:600;}
+  .content-card h4{font-size:1rem;}
+  .content-card a.watch{margin-top:auto; font-size:0.85rem; font-weight:600; color:var(--ink-soft); display:inline-flex; align-items:center; gap:6px;}
+
+  @media (max-width:880px){ .content-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:600px){ .content-grid{grid-template-columns:1fr;} }
+
+  /* ---------- rotary ---------- */
+  .rotary-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:24px;}
+  .rotary-card{
+    border:1px solid var(--line); border-radius:var(--radius); padding:26px; background:var(--paper);
+    position:relative;
+  }
+  .rotary-card .tag{
+    display:inline-block; font-size:0.72rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--white); background:var(--maroon); padding:4px 10px; border-radius:2px; margin-bottom:14px;
+  }
+  .rotary-card h3{font-size:1.12rem; margin-bottom:8px;}
+  .rotary-card p{color:var(--slate); font-size:0.94rem; margin:0;}
+
+  @media (max-width:700px){ .rotary-grid{grid-template-columns:1fr;} }
+
+  /* ---------- khatapata band ---------- */
+  .khata-band{
+    background:var(--ink); color:var(--white); padding:64px 0; position:relative; overflow:hidden;
+  }
+  .khata-inner{
+    display:flex; align-items:center; justify-content:space-between; gap:32px; flex-wrap:wrap;
+  }
+  .khata-inner h2{color:var(--white); font-size:clamp(1.6rem,3vw,2.1rem); max-width:520px;}
+  .khata-inner p{color:rgba(255,253,249,0.72); margin-top:10px; max-width:480px;}
+
+  /* ---------- contact ---------- */
+  .contact-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px;}
+  .contact-info .info-row{display:flex; gap:14px; margin-bottom:22px;}
+  .contact-info .info-row .k{font-weight:600; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--maroon); width:90px; flex-shrink:0; padding-top:2px;}
+  .contact-info .info-row .v{color:var(--ink); font-size:0.98rem;}
+  .contact-info .info-row a{border-bottom:1px solid var(--line);}
+
+  form.contact-form{
+    background:var(--white); border:1px solid var(--line); border-radius:var(--radius); padding:32px;
+    display:flex; flex-direction:column; gap:16px;
+  }
+  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  label{font-size:0.82rem; font-weight:600; margin-bottom:6px; display:block;}
+  input, textarea, select{
+    width:100%; border:1px solid var(--line); border-radius:var(--radius); padding:11px 12px;
+    font-family:'Inter',sans-serif; font-size:0.95rem; background:var(--paper); color:var(--ink);
+  }
+  textarea{resize:vertical; min-height:120px;}
+  .form-status{font-size:0.88rem; display:none;}
+  .form-status.show{display:block;}
+  .form-status.ok{color:#2E6B4F;}
+  .form-status.err{color:var(--maroon);}
+
+  @media (max-width:880px){ .contact-grid{grid-template-columns:1fr;} .form-row{grid-template-columns:1fr;} }
+
+  /* ---------- footer ---------- */
+  footer{background:var(--ink); color:rgba(255,253,249,0.6); padding:40px 0; font-size:0.85rem;}
+  .footer-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;}
+  .footer-socials{display:flex; gap:18px;}
+  .footer-socials a{color:rgba(255,253,249,0.7); font-weight:500;}
+  .footer-socials a:hover{color:var(--marigold);}
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-row">
+    <a href="#top" class="brandmark">Prabin<span>.</span>Koirala</a>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#content">Content</a>
+      <a href="#rotary">Rotary</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta">Enquire</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow" style="color:var(--marigold);">Kathmandu, Nepal</p>
+        <h1>Advisory for businesses <em>entering and operating</em> in Nepal.</h1>
+        <p class="lead">I'm Prabin Koirala — freelance consultant and CEO of <strong style="color:var(--white);">Khatapata</strong>. I help foreign investors and growing companies handle accounting, tax, legal compliance and back-office operations in Nepal, so leadership can focus on the business itself.</p>
+        <div class="hero-cta-row">
+          <a href="#services" class="btn btn-primary">See services</a>
+          <a href="#content" class="btn btn-ghost">Watch recent content</a>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+      </div>
+      <div class="hero-portrait">
+        Portrait photo goes here<br>(replace this block with your image)
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div><span class="num">Freelance</span><span class="lbl">Consultant, Nepal Market Entry</span></div>
+      <div><span class="num">CEO</span><span class="lbl">Khatapata</span></div>
+      <div><span class="num">Rotary</span><span class="lbl">Community Project Lead</span></div>
+    </div>
+  </div>
+  <svg class="ridge" viewBox="0 0 1200 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="0,90 0,60 120,20 220,55 320,10 430,50 560,25 650,58 760,15 880,48 980,22 1080,52 1200,30 1200,90" fill="#F3EFE6"/>
+  </svg>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2 style="font-size:2rem; margin-bottom:20px;">Two decades of Nepali business, from spreadsheets to strategy.</h2>
+      </div>
+      <div class="about-copy">
+        <p>I work with international and domestic clients who need dependable, on-the-ground expertise to operate in Nepal — from first-time <strong>FDI applications</strong> to ongoing <strong>bookkeeping and annual compliance</strong>. My background spans freelance advisory work and leading <strong>Khatapata</strong> as CEO, where I focus on making financial operations simple for growing businesses.</p>
+        <p>Outside client work, I lead community and economic development projects through the <strong>Rotary Club</strong>, and share practical business and finance insights for Nepal through short-form video and a podcast.</p>
+
+        <div class="role-cards">
+          <div class="role-card">
+            <div class="role-title">Founder &amp; CEO</div>
+            <div class="role-org">Khatapata</div>
+            <p>Leading Khatapata's product and client services for accounting, compliance and business operations. <a href="https://khatapata.com" target="_blank" rel="noopener" style="color:var(--maroon); font-weight:600;">Visit khatapata.com →</a></p>
+          </div>
+          <div class="role-card">
+            <div class="role-title">Independent Consultant</div>
+            <div class="role-org">Freelance Advisory</div>
+            <p>Accounting, tax, legal and FDI advisory for premium clients entering or operating in the Nepali market.</p>
+          </div>
+          <div class="role-card">
+            <div class="role-title">Project Lead</div>
+            <div class="role-org">Rotary Club of [Your Club Name]</div>
+            <p>Planning and executing community and economic development initiatives across Nepal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Services</p>
+      <h2>Built for businesses operating in Nepal.</h2>
+      <p>Advisory and outsourced operations for companies that want a single trusted partner on the ground — from company setup through to day-to-day finance.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon">A</div>
+        <h3>Accounting &amp; Bookkeeping Outsourcing</h3>
+        <p>End-to-end bookkeeping, reconciliations and financial reporting handled off your desk, on Nepal's accounting standards.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">T</div>
+        <h3>Tax &amp; Legal Consulting</h3>
+        <p>Corporate tax planning, filings, and legal guidance for Nepali entities and foreign-owned businesses.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">F</div>
+        <h3>FDI Investment in Nepal</h3>
+        <p>End-to-end support for foreign direct investment approval, entity registration and regulatory navigation.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">C</div>
+        <h3>Annual Compliance</h3>
+        <p>Statutory filings, renewals and regulatory deadlines managed so your business stays in good standing year-round.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">O</div>
+        <h3>Cost Control</h3>
+        <p>Operational and financial reviews to identify inefficiencies and tighten margins without slowing the business down.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">S</div>
+        <h3>Operations Outsourcing</h3>
+        <p>Back-office and operational support so leadership can stay focused on strategy and growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="content">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Content</p>
+      <h2>Business &amp; finance insights, in short form.</h2>
+      <p>Practical takes on tax, compliance and running a business in Nepal — on TikTok, YouTube Shorts, and long-form on the podcast.</p>
+    </div>
+    <div class="content-grid">
+      <div class="content-card">
+        <div class="thumb"><div class="play">▶</div></div>
+        <div class="body">
+          <span class="platform">TikTok</span>
+          <h4>Quick tips on Nepali tax &amp; compliance</h4>
+          <a class="watch" href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener">Watch on TikTok →</a>
+        </div>
+      </div>
+      <div class="content-card">
+        <div class="thumb"><div class="play">▶</div></div>
+        <div class="body">
+          <span class="platform">YouTube Shorts</span>
+          <h4>What foreign investors get wrong about FDI</h4>
+          <a class="watch" href="https://www.youtube.com/@yourhandle/shorts" target="_blank" rel="noopener">Watch on YouTube →</a>
+        </div>
+      </div>
+      <div class="content-card">
+        <div class="thumb"><div class="play">▶</div></div>
+        <div class="body">
+          <span class="platform">Podcast</span>
+          <h4>Full conversations on business in Nepal</h4>
+          <a class="watch" href="https://www.youtube.com/@yourhandle" target="_blank" rel="noopener">Watch the podcast →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="rotary">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Community</p>
+      <h2>Projects executed through Rotary Club.</h2>
+      <p>Community and economic development work I've led or contributed to.</p>
+    </div>
+    <div class="rotary-grid">
+      <div class="rotary-card">
+        <span class="tag">Project</span>
+        <h3>[Project name]</h3>
+        <p>Short description of the initiative — what it addressed, who it served, and the outcome. Replace with your real project details.</p>
+      </div>
+      <div class="rotary-card">
+        <span class="tag">Project</span>
+        <h3>[Project name]</h3>
+        <p>Short description of the initiative — what it addressed, who it served, and the outcome. Replace with your real project details.</p>
+      </div>
+      <div class="rotary-card">
+        <span class="tag">Project</span>
+        <h3>[Project name]</h3>
+        <p>Short description of the initiative — what it addressed, who it served, and the outcome. Replace with your real project details.</p>
+      </div>
+      <div class="rotary-card">
+        <span class="tag">Project</span>
+        <h3>[Project name]</h3>
+        <p>Short description of the initiative — what it addressed, who it served, and the outcome. Replace with your real project details.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="khata-band">
+  <div class="wrap khata-inner">
+    <div>
+      <p class="eyebrow" style="color:var(--marigold);">Khatapata</p>
+      <h2>Looking for ongoing accounting &amp; compliance support?</h2>
+      <p>Khatapata is the business I lead as CEO — built to handle bookkeeping, compliance and financial operations for growing companies in Nepal.</p>
+    </div>
+    <a href="https://khatapata.com" target="_blank" rel="noopener" class="btn btn-primary">Visit Khatapata.com</a>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Contact</p>
+      <h2>Start a conversation.</h2>
+      <p>For accounting, tax, FDI or compliance enquiries — send a message and I'll get back to you directly.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-row"><div class="k">Email</div><div class="v"><a href="mailto:prabin@khatapata.com">prabin@khatapata.com</a></div></div>
+        <div class="info-row"><div class="k">Location</div><div class="v">Kathmandu, Nepal</div></div>
+        <div class="info-row"><div class="k">Business</div><div class="v"><a href="https://khatapata.com" target="_blank" rel="noopener">khatapata.com</a></div></div>
+        <div class="info-row"><div class="k">Follow</div><div class="v">TikTok · YouTube Shorts · Podcast — links in footer</div></div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="company">Company (optional)</label>
+            <input type="text" id="company" name="company">
+          </div>
+          <div>
+            <label for="service">Service of interest</label>
+            <select id="service" name="service">
+              <option>Accounting &amp; Bookkeeping</option>
+              <option>Tax &amp; Legal Consulting</option>
+              <option>FDI Investment in Nepal</option>
+              <option>Annual Compliance</option>
+              <option>Cost Control</option>
+              <option>Operations Outsourcing</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="Tell me a bit about what you need..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark" style="align-self:flex-start;">Send message</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-row">
+    <div>© <span id="year"></span> Prabin Koirala · prabinkoirala.com.np</div>
+    <div class="footer-socials">
+      <a href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.youtube.com/@yourhandle" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://khatapata.com" target="_blank" rel="noopener">Khatapata</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    const action = form.getAttribute('data-endpoint') || 'https://formspree.io/f/YOUR_FORM_ID';
+    status.className = 'form-status show';
+    status.textContent = 'Sending...';
+    try{
+      const res = await fetch(action, {
+        method: 'POST',
+        headers: {'Accept':'application/json'},
+        body: new FormData(form)
+      });
+      if(res.ok){
+        status.textContent = "Thanks — your message has been sent. I'll be in touch soon.";
+        status.className = 'form-status show ok';
+        form.reset();
+      } else {
+        throw new Error('Form endpoint not configured yet');
+      }
+    } catch(err){
+      status.textContent = "Something went wrong — please email prabin@khatapata.com directly.";
+      status.className = 'form-status show err';
+    }
+  });
+</script>
+
+</body>
 </html>
